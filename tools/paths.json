@@ -1,0 +1,7 @@
+{
+    "app": "src",
+    "www": "www",
+    "assets": "assets",
+    "indexHtml": "www/index.html",
+    "node_modules": "node_modules"
+}

@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../../",
+    "rootDirs": [
+      "./site",
+      "./src"
+    ],
+    "paths": {
+      "wasabi-ui/lib/*": [
+        "./src/*"
+      ],
+      "wasabi-ui": [
+        "./src/index"
+      ],
+      "wasabi-core/lib/*": [
+        "./packages/core/src/*"
+      ],
+      "wasabi-core": [
+        "./packages/core/src/index"
+      ],
+      "wasabi-view-api/lib/*": [
+        "./packages/view-api/src/*"
+      ],
+      "wasabi-view-api": [
+        "./packages/view-api/src/index"
+      ],
+      "wasabi-view/lib/*": [
+        "./packages/view/src/*"
+      ],
+      "wasabi-view": [
+        "./packages/view/src/index"
+      ]
+    },
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "jsx": "react",
+    "outDir": "./lib"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "name": "ts-react-project-skeleton",
+  "version": "0.0.1",
+  "description": "lib/index.js",
+  "main": "lib/index.js",
+  "typings": "lib/index",
+  "scripts": {
+    "start": "webpack-dev-server --config tools/dev/webpack.js --colors",
+    "build": "webpack --config tools/build/webpack.js --colors",
+    "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha --opts mocha.opts",
+    "coverage": "nyc report --reporter=lcov",
+    "docs": "rimraf ./docs && typedoc --module commonjs --target ES5 --name ts-react-project-skeleton --readme ./README.md  --exclude **/*.spec.ts --out ./docs ./src && node node_modules/shx/lib/cli.js touch ./docs/.nojekyll"
+  },
+  "author": "kamilbukum@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.5.1",
+    "@types/enzyme": "^2.7.9",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.8",
+    "@types/react": "^15.0.23",
+    "@types/react-addons-shallow-compare": "^0.14.19",
+    "@types/react-addons-test-utils": "^0.14.18",
+    "@types/react-bootstrap": "0.0.48",
+    "@types/react-dom": "^15.5.0",
+    "@types/systemjs": "^0.20.2",
+    "app-root-path": "^2.0.1",
+    "bootstrap": "4.0.0-alpha.6",
+    "chai": "^3.5.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "enzyme": "^2.8.2",
+    "file-loader": "^0.11.1",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
+    "react-addons-test-utils": "^15.5.1",
+    "rimraf": "^2.6.1",
+    "shx": "^0.2.2",
+    "style-loader": "^0.16.1",
+    "ts-loader": "^2.0.3",
+    "ts-node": "^2.1.0",
+    "typedoc": "^0.5.7",
+    "typescript": "^2.2.1",
+    "wasabi-common": "^1.0.5",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4",
+    "webpack-file-changer": "^2.0.1",
+    "webpack-notifier": "^1.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://hasan.mumin@dev.mebitech.com/stash/scm/me/ts-react-project-skeleton.git"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "src/**/*.d.ts"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-addons-shallow-compare": "^15.5.2",
+    "react-addons-transition-group": "^15.5.2",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-prop-types": "^0.4.0"
+  }
+}
