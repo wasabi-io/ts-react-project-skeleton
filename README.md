@@ -11,8 +11,8 @@ $ git clone ....`
 $ cd ts-react-project-skeleton
 $ npm install
 ```
-```
-* run start Showcase (Development Mode) 
+
+* run start (Development Mode) 
 ```ssh
 $ npm start
 ```
@@ -23,7 +23,7 @@ $ npm start
 $ npm test
 ```
 
-* generate Showcase build (Production Mode) 
+*  build project (Production Mode) 
 ```ssh
 $ npm start
 ```
